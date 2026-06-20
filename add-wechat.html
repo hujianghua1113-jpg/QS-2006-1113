@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>添加微信好友</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #1a1a1a;
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #2b2b2b;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 193, 96, 0.2);
+            max-width: 350px;
+            width: 100%;
+        }
+        .title {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .qrcode {
+            width: 260px;
+            height: 260px;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            object-fit: contain;
+            background: #fff;
+            padding: 10px;
+        }
+        .tip {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.6;
+        }
+        .tip strong {
+            color: #07C160;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">扫码添加微信好友</div>
+        <img src="wechat-qrcode.png" alt="微信二维码" class="qrcode">
+        <p class="tip">
+            请用微信扫描上方二维码<br>
+            或 <strong>长按图片识别二维码</strong> 添加好友
+        </p>
+    </div>
+</body>
+</html>
